@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @rochajario
 - 👀 I’m interested in C# and Vue.js
-- 🌱 I’m currently learning PHP and Web Technology
+- 🌱 Technology as Means To Help People
 - 📫 You can reach me at https://www.linkedin.com/in/rochajario/
 
 <!---
