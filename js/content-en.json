@@ -1,0 +1,10 @@
+{
+  "sections": {
+    "overview": "About",
+    "projects": "Projects"
+  },
+  "overview": {
+    "title": "About me",
+    "description": "I'm a software engineer passionate about developing innovative technological solutions that solve complex problems. With more than 3 years working as a Developer. I've been working on challenging projects that have allowed me to improve my technical skills in languages ​​such as Java, C#, JavaScript and Typescript. I have experience in agile approaches and multidisciplinary collaboration aiming to deliver high quality products. I am always looking for new challenges and opportunities to learn and grow as a professional."
+  }
+}
