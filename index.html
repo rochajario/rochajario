@@ -1,67 +1,715 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./css/style.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
-      integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
-      crossorigin="anonymous"
-    />
-    <link href="./css/bootstrap.min.css" rel="stylesheet" />
-    <link href="./css/style.css" rel="stylesheet" />
-    <title>Coverpage</title>
-  </head>
-  <body class="d-flex h-100 text-center">
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="mb-auto">
-        <div class="align-center">
-          <nav class="nav nav-masthead justify-content-center float-md-start">
-            <a
-              class="nav-link py-1 px-0"
-              href="https://linkedin.com/in/rochajario"
-              target="_blank"
-              ><i class="bi bi-linkedin"></i
-            ></a>
-            <a
-              class="nav-link py-1 px-0"
-              href="https://github.com/rochajario"
-              target="_blank"
-              ><i class="bi bi-github"></i
-            ></a>
-            <a
-              class="nav-link py-1 px-0"
-              href="mailto:rochajario@gmail.com"
-              target="_blank"
-              ><i class="bi bi-envelope-plus-fill"></i
-            ></a>
-          </nav>
-          <nav class="nav nav-masthead justify-content-center float-md-end">
-            <a class="flag nav-link py-1 px-0" id="lang-pt" href="#">
-              &#x1F1E7;&#x1F1F7;
-            </a>
-            <a class="flag nav-link py-1 px-0" id="lang-en" href="#">
-              &#x1F1FA;&#x1F1F8;
-            </a>
-          </nav>
-        </div>
-      </header>
+<html lang="pt-BR">
 
-      <main class="px-3 d-flex flex-column justify-content-start">
-        <section id="profile-section" class="lead mt-3">
-          <h2>Jario Rocha</h2>
-          <img class="profile-img" src="./img/profile.jpg" />
-          <article id="profile-details" class="mt-3"></article>
-        </section>
-      </main>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Bright Digital</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
-      <footer class="mt-auto text-white-50">
-        <p class="lead"></p>
-      </footer>
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <h1 class="sitename">Bright</h1><span>.</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#services">Serviços</a></li>
+          <li><a href="#news">Notícias</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="#about">Fale Conosco</a>
+
     </div>
-    <script type="module" src="./js/main.js"></script>
-    <script src="./js/bootstrap.bundle.min.js"></script>
-  </body>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="badge-wrapper mb-3">
+              <div class="d-inline-flex align-items-center rounded-pill border border-accent-light">
+                <div class="icon-circle me-2">
+                  <i class="bi bi-bell"></i>
+                </div>
+                <span class="badge-text me-3">Soluções Inovadoras</span>
+              </div>
+            </div>
+
+            <h1 class="hero-title mb-4">Acelerando o crescimento de negócios através de inovação tecnológica</h1>
+
+            <p class="hero-description mb-4">Descubra como nossas soluções personalizadas podem otimizar processos, gerar insights valiosos e garantir sua liderança no mercado.</p>
+
+            <div class="cta-wrapper">
+              <a href="#" class="btn btn-primary">Saiba mais</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="hero-image">
+              <img src="assets/img/illustration/illustration-16.png" alt="Business Growth" class="img-fluid" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <div class="row feature-boxes">
+          <div class="col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-box">
+              <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
+                <i class="bi bi-gear"></i>
+              </div>
+              <div class="feature-content">
+                <h3 class="feature-title">Entrega Rápida</h3>
+                <p class="feature-text">Entregamos com eficiência para que você possa colher os frutos do investimento em tecnologia o quanto antes.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="feature-box">
+              <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
+                <i class="bi bi-window"></i>
+              </div>
+              <div class="feature-content">
+                <h3 class="feature-title">Aplicações Seguras</h3>
+                <p class="feature-text">Desenvolvemos com as mais rígidas normas de segurança para blindar suas informações e operações contra ameaças.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="feature-box">
+              <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
+                <i class="bi bi-headset"></i>
+              </div>
+              <div class="feature-content">
+                <h3 class="feature-title">Suporte Dedicado</h3>
+                <p class="feature-text">Vamos além do suporte técnico, oferecendo consultoria e acompanhamento para que você aproveite todo o potencial da tecnologia.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <p class="who-we-are">Quem Somos</p>
+            <h3>Liberamos o seu potencial com estratégia criativa</h3>
+            <p class="fst-italic">
+              Desenvolvemos soluções estratégicas e criativas para os desafios do seu negócio, aplicando nossa experiência para destravar o verdadeiro potencial da sua empresa.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Criamos caminhos únicos para seus desafios.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Metodologias ágeis para impacto real.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Sua evolução é nossa maior meta.</span></li>
+            </ul>
+            <a href="#" class="read-more"><span>Saiba Mais</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
+            <div class="row gy-4">
+              <div class="col-lg-6">
+                <img src="assets/img/about/about-portrait-1.webp" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-6">
+                <div class="row gy-4">
+                  <div class="col-lg-12">
+                    <img src="assets/img/about/about-8.webp" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-lg-12">
+                    <img src="assets/img/about/about-12.png" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- /About Section -->
+
+    <!-- How We Work Section -->
+    <section id="how-we-work" class="how-we-work section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Nossa Metodologia</h2>
+        <p>Em nossos projetos, aplicamos metodologias ágeis e Design Thinking para garantir entregas constantes, incrementais e focadas no valor real para nossos clientes, cocriando soluções que evoluem com suas necessidades.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="steps-5">
+          <div class="process-container">
+
+            <div class="process-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="content">
+                <span class="step-number">01</span>
+                <div class="card-body">
+                  <div class="step-icon">
+                    <i class="bi bi-pencil-square"></i>
+                  </div>
+                  <div class="step-content">
+                    <h3>Planejamento</h3>
+                    <p>Identificamos e mapeamos as oportunidades, desafios e objetivos. Projetamos e validamos o que será desenvolvido.</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Process Item -->
+
+            <div class="process-item" data-aos="fade-up" data-aos-delay="300">
+              <div class="content">
+                <span class="step-number">02</span>
+                <div class="card-body">
+                  <div class="step-icon">
+                    <i class="bi bi-gear"></i>
+                  </div>
+                  <div class="step-content">
+                    <h3>Desenvolvimento</h3>
+                    <p>Implementamos o artefato elaborado na etapa de planejamento. Funcionalidade e documentação disponível e operacional ao fim do ciclo.</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Process Item -->
+
+            <div class="process-item" data-aos="fade-up" data-aos-delay="400">
+              <div class="content">
+                <span class="step-number">03</span>
+                <div class="card-body">
+                  <div class="step-icon">
+                    <i class="bi bi-search"></i>
+                  </div>
+                  <div class="step-content">
+                    <h3>Testes &amp; QA</h3>
+                    <p>Submetemos a funcionalidade à rigorosos padrões de qualidade. Validamos e asseguramos a entrega de valor junto ao cliente.</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Process Item -->
+
+            <div class="process-item" data-aos="fade-up" data-aos-delay="500">
+              <div class="content">
+                <span class="step-number">04</span>
+                <div class="card-body">
+                  <div class="step-icon">
+                    <i class="bi bi-rocket-takeoff"></i>
+                  </div>
+                  <div class="step-content">
+                    <h3>Lançamento &amp; Suporte</h3>
+                    <p>Seu produto digital acessível para o público alvo e uma equipe especialista disponível para atender as demandas tecnológicas e de negócio.</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Process Item -->
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /How We Work Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Serviços</h2>
+        <p>Nosso portfólio completo para acelerar a sua jornada digital.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row justify-content-center g-5">
+
+          <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <div class="service-content">
+                <h3>Desenvolvimento Web Sob Demanda</h3>
+                <p>Criamos soluções web personalizadas que se encaixam perfeitamente às suas necessidades, do planejamento ao lançamento, garantindo performance e escalabilidade para o seu negócio.</p>
+                <a href="#" class="service-link">
+                  <span>Saiba mais</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-palette2"></i>
+              </div>
+              <div class="service-content">
+                <h3>Design de UI/UX</h3>
+                <p>Desenvolvemos interfaces intuitivas e experiências de usuário envolventes que encantam seu público e convertem visitantes em clientes, unindo estética e funcionalidade.</p>
+                <a href="#" class="service-link">
+                  <span>Saiba mais</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-bar-chart-line"></i>
+              </div>
+              <div class="service-content">
+                <h3>Marketing Digital</h3>
+                <p>Impulsionamos sua marca no ambiente online com estratégias que geram tráfego qualificado, engajamento e resultados mensuráveis, conectando você ao seu público ideal.</p>
+                <a href="#" class="service-link">
+                  <span>Saiba mais</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-right" data-aos-delay="300">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-cloud-check"></i>
+              </div>
+              <div class="service-content">
+                <h3>Cloud Computing</h3>
+                <p>Migre e otimize sua infraestrutura para a nuvem, garantindo mais flexibilidade, segurança e redução de custos, permitindo que sua empresa escale sem limites.</p>
+                <a href="#" class="service-link">
+                  <span>Saiba mais</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+    <!-- Services Alt Section -->
+    <section id="services-alt" class="services-alt section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="content-block">
+              <h6 class="subtitle">Nossos serviços inovadores</h6>
+              <h2 class="title">Nossos clientes se destacam em gestão de tecnologia</h2>
+              <p class="description">
+                No cenário atual, a gestão de tecnologia é um diferencial competitivo essencial. Nossos clientes não apenas usam a tecnologia; eles a dominam, orquestrando-a estrategicamente. Isso os mantém à frente, permitindo decisões ágeis e maximizando o valor de cada investimento, resultando em empresas mais eficientes e preparadas para o futuro.
+              </p>
+              <div class="button-wrapper">
+                <a class="btn" href="services.html"><span>Explore todos os serviços</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="services-list">
+              <div class="service-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-icon">
+                  <i class="bi bi-code-square"></i>
+                </div>
+                <div class="service-content">
+                  <h4><a href="service-details.html">Engenharia de Software</a></h4>
+                  <p>Transformamos sua estratégia em soluções digitais de alto impacto.</p>
+                </div>
+              </div><!-- End Service Item -->
+
+              <div class="service-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-icon">
+                  <i class="bi bi-graph-up"></i>
+                </div>
+                <div class="service-content">
+                  <h4><a href="service-details.html">Business Analytics</a></h4>
+                  <p>Convertemos dados em insights acionáveis que impulsionam o sucesso.</p>
+                </div>
+              </div><!-- End Service Item -->
+
+              <div class="service-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="500">
+                <div class="service-icon">
+                  <i class="bi bi-gear"></i>
+                </div>
+                <div class="service-content">
+                  <h4><a href="service-details.html">Infraestrutura Tech</a></h4>
+                  <p> Garantimos a base sólida para essa inovação contínua.</p>
+                </div>
+              </div><!-- End Service Item -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Services Alt Section -->
+
+    <!-- Call To Action 2 Section -->
+    <section id="call-to-action-2" class="call-to-action-2 section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="cta-image-wrapper">
+              <img src="assets/img/cta/cta-4.png" alt="Call to Action" class="img-fluid rounded-4">
+              <div class="cta-pattern"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="cta-content">
+              <h2>Transforme sua visão em realidade hoje</h2>
+              <p class="lead">Sua visão de futuro começa a se materializar agora. Em um mercado que não para de evoluir, a estagnação é o maior risco. Chega de planos engavetados; é hora de construir o amanhã da sua empresa.</p>
+              <div class="cta-features">
+                <div class="feature-item" data-aos="zoom-in" data-aos-delay="400">
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span>Conecte-se com nossos especialistas.</span>
+                </div>
+                <div class="feature-item" data-aos="zoom-in" data-aos-delay="450">
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span>Descubra soluções feitas para você.</span>
+                </div>
+                <div class="feature-item" data-aos="zoom-in" data-aos-delay="500">
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span>Garanta seu lugar no futuro.</span>
+                </div>
+              </div>
+
+              <div class="cta-action mt-5">
+                <a href="#" class="btn btn-primary btn-lg me-3">Fale Conosco</a>
+                <a href="#" class="btn btn-outline-primary btn-lg">Saiba Mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Call To Action 2 Section -->
+
+    <!-- Portfolio Section -->
+    <section id="news" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Notícias</h2>
+        <p>Descubra em tempo real como nossos projetos estão transformando negócios e gerando resultados reais para nossos clientes.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/portfolio-2.png" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-2.png" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
+                      <a href="#" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Projeto</span>
+                  <h3>Bandeirantes Deicmar</h3>
+                  <p>Bright Digital é parceira da Join Tecnologia no desenvolvimento de sistema para gestão de remessas.</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/portfolio-1.png" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-1.png" class="glightbox preview-link" data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
+                      <a href="#" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Joint Venture</span>
+                  <h3>Discovery e Desenvolvimento</h3>
+                  <p>Bright Digital une-se à Visium Comunicação em Joint Venture para desenvolvimento de novo produto digital.</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+          </div><!-- End Portfolio Container -->
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5">
+          <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="200">
+            <div class="faq-contact-card">
+              <div class="card-icon">
+                <i class="bi bi-question-circle"></i>
+              </div>
+              <div class="card-content">
+                <h3>Dúvidas?</h3>
+                <p>Nossa equipe está pronta para esclarecer todas as suas perguntas e te ajudar a dar o próximo passo.</p>
+                <div class="contact-options">
+                  <a href="#" class="contact-option">
+                    <i class="bi bi-envelope"></i>
+                    <span>E-mail</span>
+                  </a>
+                  <a href="#" class="contact-option">
+                    <i class="bi bi-chat-dots"></i>
+                    <span>Chat</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="faq-accordion">
+              <div class="faq-item faq-active">
+                <div class="faq-header">
+                  <h3>Desenvolvimento sob demanda pode beneficiar meu negócio?</h3>
+                  <i class="bi bi-chevron-down faq-toggle"></i>
+                </div>
+                <div class="faq-content">
+                  <p>
+                    Ao desenvolver um software ajustado ao seu negócio garantimos que você tenha uma plataforma digital feita sob medida para suas necessidades específicas, não uma solução genérica. Isso significa maior eficiência, funcionalidades exclusivas e uma experiência otimizada para seus usuários, resultando em mais conversões e um diferencial competitivo no mercado.
+                  </p>
+                </div>
+              </div><!-- End FAQ Item-->
+
+              <div class="faq-item" data-aos="zoom-in" data-aos-delay="200">
+                <div class="faq-header">
+                  <h3>Qual a importância do Design de UI/UX para o sucesso de uma aplicação?</h3>
+                  <i class="bi bi-chevron-down faq-toggle"></i>
+                </div>
+                <div class="faq-content">
+                  <p>
+                    Uma estratégia de design bem executada é crucial porque ela coloca o usuário no centro. Interfaces intuitivas e experiências agradáveis aumentam o engajamento, a satisfação do cliente e, consequentemente, a retenção. Isso se traduz em maior tempo de uso da sua aplicação e uma percepção positiva da sua marca.
+                  </p>
+                </div>
+              </div><!-- End FAQ Item-->
+
+              <div class="faq-item">
+                <div class="faq-header">
+                  <h3>Como o Marketing Digital pode impulsionar minhas vendas?</h3>
+                  <i class="bi bi-chevron-down faq-toggle"></i>
+                </div>
+                <div class="faq-content">
+                  <p>
+                    Marketing Digital é muito mais que simples presença online. Desenvolvemos estratégias personalizadas para atrair o público certo, gerar leads qualificados e converter esses leads em vendas. Utilizamos dados e análises para otimizar campanhas, garantindo um retorno sobre o investimento mensurável e o crescimento da sua base de clientes.
+                  </p>
+                </div>
+              </div><!-- End FAQ Item-->
+
+              <div class="faq-item">
+                <div class="faq-header">
+                  <h3>Como vocês garantem que suas metodologias ágeis e Design Thinking entregam valor real?</h3>
+                  <i class="bi bi-chevron-down faq-toggle"></i>
+                </div>
+                <div class="faq-content">
+                  <p>
+                    Ao utilizar metodologias ágeis e o Design Thinking fazemos entregas contínuas e incrementais de valor. Isso significa que você vê o progresso em tempo real, valida as soluções com frequência e tem a certeza de que o produto final atenderá exatamente às suas necessidades, minimizando riscos e maximizando o impacto do seu investimento.
+                  </p>
+                </div>
+              </div><!-- End FAQ Item-->
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+
+    <!-- Team Section -->
+    <section id="team" class="team section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Nossos Especialistas</h2>
+        <p>Profissionais experientes em suas áreas de atuação</p>
+      </div><!-- End Section Title -->
+
+      <div class="container d-flex" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-5 justify-content-center">
+
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+            <div class="team-card">
+              <div class="team-image">
+                <img src="assets/img/person/person-m-1.png" class="img-fluid" alt="">
+                <div class="team-overlay">
+                  <p>Especialista em Engenharia de Software com vasta experiência em aplicações web e backend, arquiteturas escaláveis e soluções de alta performance. </p>
+                  <div class="team-social">
+                    <a href=""><i class="bi bi-github"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="team-content">
+                <h4>Jario Rocha</h4>
+                <span class="position">Lead Software Engineer</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+            <div class="team-card">
+              <div class="team-image">
+                <img src="assets/img/person/person-m-2.png" class="img-fluid" alt="">
+                <div class="team-overlay">
+                  <p>Especialista em marketing digital, branding empresarial e comunicação visual. Transforma marcas, conectando-as de forma autêntica ao seu público. </p>
+                  <div class="team-social">
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="team-content">
+                <h4>Jessica Castro</h4>
+                <span class="position">Marketing Strategist</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Bright Digital</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p class="mt-3"><strong>Fone:</strong> <span>+55 31 9 9885 8605</span></p>
+            <p><strong>Email:</strong> <span>rochajario@gmail.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-github"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Links Úteis</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Notícias</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Nossos Serviços</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Desenvolvimento Web</a></li>
+            <li><a href="#">Gestão de Produto</a></li>
+            <li><a href="#">Marketing Digital</a></li>
+            <li><a href="#">Design Gráfico</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Bright Digital</strong> <span>Todos os direitos reservados</span></p>
+      <div class="credits">
+        Desenvolvido por <a href="#">Bright Digital</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
